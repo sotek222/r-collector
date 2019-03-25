@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  bio: MyString
+  favorite_artist: MyString
+  favorite_record: MyString
+  favorite_genre: MyString
+
+two:
+  username: MyString
+  bio: MyString
+  favorite_artist: MyString
+  favorite_record: MyString
+  favorite_genre: MyString
