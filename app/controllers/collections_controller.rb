@@ -10,4 +10,10 @@ class CollectionsController < ApplicationController
 
     render json: @collection
   end
+
+  def create
+    collection = Collection.create(user_id: params["user_id"], record_id: params["record_id"])
+
+    render json: collection
+  end
 end
