@@ -6,6 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Collection.destroy_all
+User.destroy_all
 Record.destroy_all
 
 Record.create(title: "Toxicity", artist: "System Of A Down", genre: "Rock", image_url: "https://img.discogs.com/aJdQfVMs7J_tjAUuy9vO0UEoppc=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-370466-1536614791-9667.jpeg.jpg")

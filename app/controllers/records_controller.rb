@@ -11,4 +11,10 @@ class RecordsController < ApplicationController
 
     render json: @record
   end
+
+  def create
+    record = Record.create(title: params[:title], artist: params[:artist], genre: params[:genre], image_url: params[:image_url])
+
+    render json: record
+  end
 end
