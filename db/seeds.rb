@@ -12,4 +12,4 @@ record1 = Record.create(title: "Toxicity", artist: "System Of A Down", genre: "R
 record2 = Record.create(title: "It's Dark And Hell Is Hot", artist: "DMX", genre: "Hip Hop", image_url: "https://img.discogs.com/1yU3Nco56ivgmsSlZS_s97C3MCU=/fit-in/600x599/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-3911657-1431034367-1686.png.jpg")
 record3 = Record.create(title: "Floral Shoppe", artist: "Macintosh Plus", genre: "Vaporwave", image_url: "https://img.discogs.com/ytbgef_OaTUlDg8N3zEOJnHLKUo=/fit-in/600x601/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-9846531-1487279511-4786.png.jpg")
 
-User.create();
+User.create(email: "matt@matt.com");
