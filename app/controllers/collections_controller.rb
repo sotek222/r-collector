@@ -18,8 +18,9 @@ class CollectionsController < ApplicationController
   end
 
   def destroy
-    collection = Collection.find(params[:id])
-
+    record = Record.find(params[:record_id])
+    collection = Collection.find_by(record_id: record.id, user_id: params[:user_id])
     collection.destroy
+    render json: record.id
   end
 end
