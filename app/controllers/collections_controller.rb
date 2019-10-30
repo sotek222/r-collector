@@ -12,9 +12,17 @@ class CollectionsController < ApplicationController
   end
 
   def create
-    collection = Collection.create(user_id: params["user_id"], record_id: params["record_id"])
-
-    render json: collection
+    collection = Collection.find_by(user_id: params["user_id"], record_id: params["record_id"])
+    if collection
+      render json: {
+        message: "Already in collection",
+        status: 204
+      }
+    else 
+      collection = Collection.create(user_id: params["user_id"], record_id: params["record_id"])
+      render json: collection
+    end
+    
   end
 
   def destroy
