@@ -1,4 +1,6 @@
-class CollectionsController < ApplicationController
+class Api::V1::CollectionsController < ApplicationController
+  
+  
   def index
     @collections = Collection.all
 
