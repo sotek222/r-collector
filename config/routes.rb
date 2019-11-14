@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :collections, except: %i[delete]
-      resources :records
-      resources :users
+      resources :collections, except: %i[index show delete]
+      resources :records, except: %i[delete]
+      resources :users, except: %i[index delete]
     
       delete "/collections/:record_id/:user_id", to: "collections#destroy"
     end
